@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const tpoints = {};
 const vpoints = {};
+const fs = require("fs"); 
 const prefix = 'm!';
 const client = new Discord.Client();
 
