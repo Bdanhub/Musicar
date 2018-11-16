@@ -644,7 +644,7 @@ function forEachObject(obj, func) {
 client.on("ready", () => {
     var guild;
     while (!guild)
-        guild = client.guilds.get("513003845144543232")
+        guild = client.guilds.get("506555643512225794")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -664,7 +664,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('made it till here!');
     var guild;
     while (!guild)
-        guild = client.guilds.get("513003845144543232")
+        guild = client.guilds.get("506555643512225794")
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -677,7 +677,6 @@ client.on("guildMemberAdd", (member) => {
         })
     })
 });
-
 
 client.login(process.env.BOT_TOKEN);
 
